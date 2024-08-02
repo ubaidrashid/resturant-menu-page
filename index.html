@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://e7.pngegg.com/pngimages/673/968/png-clipart-decal-nova-empire-android-sweets-logo-food-text-thumbnail.png">
+
+  <title>Product list with cart</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="overlay none">
+    <div class="overlay-child">
+      <div class="img-con">
+        <img src="assets/assets/images/icon-order-confirmed.svg" alt="">
+      </div>
+
+      <div class="con-head">
+        <h2 class="con-head">Order Confirmed</h2>
+      </div>
+
+      <div class="con-desc">we hope you enjoy your food!</div>
+      <div class="slayer">
+
+        <!-- <div class="first-overlay">
+          <div class="for-flex">
+            <div class="inner-img"><img src="./assets/assets/images/image-waffle-thumbnail.jpg" alt=""></div>
+            <div class="name-price">
+              <div class="name"></div>
+              <div class="amounting">
+                <div class="qtyy"><span class="qtyies">1</span>x</div>
+                <div class="amounti">@ $ <span class="amounties">5.50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="totalies">500</div>
+        </div> -->
+        <!-- <div class="order-con-total">
+          <div class="texti">Order Total</div>
+          <div class="total-print-con">$<span class="print-con">5.50</span></div>
+        </div> -->
+
+      </div>
+      <div class="new-order-start">
+        <button class="new-order" onclick="newl()">
+          Start New Order
+        </button>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div  id="hash" class="main-child">
+      <div class="first-child">
+
+        <div class="main-head">
+          <h1> Desserts </h1>
+        </div>
+        <div class="all-items">
+
+
+
+          <div class="items">
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-waffle-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-waffle-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-waffle-mobile.jpg" alt="">
+                <div class="add" onclick="addCart()">
+                  <img class="cart" src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to Cart
+                </div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id="item-qty1">0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Waffle</div>
+                <div class="full-name">
+                  <h2> Waffle with Berries</h2>
+                </div>
+                <div class="rate">
+                  <h2><span>$</span>6.50</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-creme-brulee-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-creme-brulee-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-creme-brulee-mobile.jpg" alt="">
+                <div class="add" onclick="addCart1()"><img class="cart" src="assets/assets/images/icon-add-to-cart.svg"
+                    alt="">Add to Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty2'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Crème Brûlée</div>
+                <div class="full-name">
+                  <h2> Vanilla Bean Crème Brûlée</h2>
+                </div>
+                <div class="rate">
+                  <h2> <span>$</span>7.00</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-macaron-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-macaron-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-macaron-mobile.jpg" alt="">
+                <div class="add" onclick="addCart2()"><img src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to
+                  Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty3'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Macaron</div>
+                <div class="full-name">
+                  <h2> Macaron Mix of Five</h2>
+                </div>
+                <div class="rate">
+                  <h2><span>$</span>8.00</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-tiramisu-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-tiramisu-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-tiramisu-mobile.jpg" alt="">
+                <div class="add" onclick="addCart3()"><img src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to
+                  Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty4'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title">Tiramisu</div>
+                <div class="full-name">
+                  <h2> Classic Tiramisu</h2>
+                </div>
+                <div class="rate">
+                  <h2> <span>$</span>5.50</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-baklava-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-baklava-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-baklava-mobile.jpg" alt="">
+                <div class="add" onclick="addCart4()"><img src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to
+                  Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty5'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Baklava</div>
+                <div class="full-name">
+                  <h2>
+                    Pistachio Baklava</h2>
+                </div>
+                <div class="rate">
+                  <h2> <span>$</span>4.00</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-meringue-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-meringue-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-meringue-mobile.jpg" alt="">
+                <div class="add" onclick="addCart5()"><img src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to
+                  Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty6'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Pie</div>
+                <div class="full-name">
+                  <h2> Lemon Meringue Pie</h2>
+                </div>
+                <div class="rate">
+                  <h2> <span>$</span>5.00</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img for-2px-border">
+                <img class="image-for-desktop" src="assets/assets/images/image-cake-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-cake-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-cake-mobile.jpg" alt="">
+                <div class="add" onclick="addCart6()"><img src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to
+                  Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty7'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Cake</div>
+                <div class="full-name">
+                  <h2> Red Velvet Cake</h2>
+                </div>
+                <div class="rate">
+                  <h2> <span>$</span>4.50</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-brownie-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-brownie-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-brownie-mobile.jpg" alt="">
+                <div class="add" onclick="addCart7()"><img src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to
+                  Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty8'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Brownie</div>
+                <div class="full-name">
+                  <h2> Salted Caramel Brownie</h2>
+                </div>
+                <div class="rate">
+                  <h2><span>$</span>4.50</h2>
+                </div>
+
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="img">
+                <img class="image-for-desktop" src="assets/assets/images/image-panna-cotta-desktop.jpg" alt="">
+                <img class="image-for-tab" src="assets/assets/images/image-panna-cotta-tablet.jpg" alt="">
+                <img class="image-for-mob" src="assets/assets/images/image-panna-cotta-mobile.jpg" alt="">
+                <div class="add" onclick="addCart8()"><img src="assets/assets/images/icon-add-to-cart.svg" alt="">Add to
+                  Cart</div>
+                <div class="incrim none">
+                  <div class="plus">
+
+                    <img src="assets/assets/images/icon-decrement-quantity.svg" alt="">
+                  </div>
+                  <span id='item-qty9'>0</span>
+                  <div class="minus">
+                    <img src="assets/assets/images/icon-increment-quantity.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+
+                <div class="title"> Panna Cotta</div>
+                <div class="full-name">
+                  <h2> Vanilla Panna Cotta</h2>
+                </div>
+                <div class="rate">
+                  <h2><span>$</span>6.50</h2>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+
+      <div class="second-child">
+        <div class="second-one">
+          <h2 id="select-qty">Your Cart ( <span id="total-qty">0</span> )</h2>
+        </div>
+
+        <div class="second-two">
+          <div class="illustor-img">
+            <img src="assets/assets/images/illustration-empty-cart.svg" alt="">
+          </div>
+          <span>Your added items will appear here</span>
+        </div>
+
+        <div class="second-three">
+          <div class="second-three-childs none">
+            
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>0</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span></div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+          <div class="second-three-childs none">
+            <div class="firsti">
+              <h2 id="h2"></h2>
+            </div>
+            <div class="secondi none">
+              <div class="secondi-child"> <span id="qty_items"></span>x</div>
+              <div class="rate-amount"> @ $<span id="rate_amount_span"></span>.00</div>
+              <div class="total-amount-foritem">$ <span id="total_price"></span>.00</div>
+            </div>
+          </div>
+
+        </div>
+        <div class="second-four none">
+          <div>Order Total</div>
+          <div class="total-payment-parent">$<sapn class="total-payment">0</sapn>
+          </div>
+        </div>
+        <div class="second-five none">
+          <div class="imgees">
+
+            <img src="assets/assets/images/icon-carbon-neutral.svg" alt="">
+          </div>
+          <div class="carbon-neutral">
+            <p class="c-n">This is a <span class="carbon">Carbon-neutral</span> delivery</p>
+          </div>
+
+        </div>
+        <div class="second-six none">
+          <div class="confirm-order">
+            <a href="#hash" id="hash_node" >Confirm Order</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
